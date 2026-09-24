@@ -11,15 +11,15 @@ Servono tre programmi e due estensioni di Visual Studio Code, da installare nell
 1. [Visual Studio Code](https://code.visualstudio.com/), l'editor in cui si scrive il codice.
 2. [Git](https://git-scm.com/downloads), che non si apre e non si usa direttamente: è il programma con cui VS Code scarica e aggiorna il repository, e con cui OpenCode può annullare le proprie modifiche.
 3. L'estensione **Live Server** di VS Code, da *Visualizza › Estensioni* (`Ctrl+Shift+X`), cercandola per nome: serve a vedere lo sketch nel browser evitando problemi di sicurezza con il caricamento di immagini, suoni o dati.
-4. **OpenCode**, l'agente di programmazione. La sua [pagina di installazione](https://opencode.ai/v2/docs) propone molti modi per installarlo: quello che funziona allo stesso modo su Windows e su macOS, senza dover sistemare percorsi a mano, passa da npm. Serve quindi prima [Node.js](https://nodejs.org/), che si installa come qualsiasi altro programma e si usa solo per questo, e poi, nel terminale di VS Code (*Terminale › Nuovo terminale*), il comando
+4. **OpenCode**, l'agente di programmazione. Si installa con npm, quindi serve prima [Node.js](https://nodejs.org/), che si installa come qualsiasi altro programma e si usa solo per questo. Poi, nel terminale di VS Code (*Terminale › Nuovo terminale*):
 
    ```
-   npm install -g @opencode/cli
+   npm install -g opencode-ai
    ```
 
-   Va installata la versione **Terminale**, non l'app desktop: è quella che l'estensione di VS Code usa per lavorare. Se più avanti il comando `opencode` non viene riconosciuto, basta chiudere e riaprire VS Code.
+   Va installata questa versione, non l'ultima uscita: l'estensione che la accompagna è stabile, mentre quella della versione 2 è ancora in prova e al momento non funziona. Se il comando `opencode` non viene riconosciuto, basta chiudere e riaprire VS Code.
 
-5. L'estensione **OpenCode** di VS Code, di nuovo da *Visualizza › Estensioni*: apre l'agente in un pannello laterale, più comodo della finestra bassa del terminale. Dopo l'installazione conviene chiudere e riaprire VS Code.
+5. L'estensione **OpenCode** di VS Code, di nuovo da *Visualizza › Estensioni*: apre l'agente in un pannello laterale, più comodo della finestra bassa del terminale. Va installata quella senza l'etichetta *Beta*, che accompagna la versione appena installata. Dopo l'installazione conviene chiudere e riaprire VS Code.
 6. Al primo avvio l'agente sceglie da sé un modello gratuito. Per cambiarlo si scrive `/models` nella conversazione e si sceglie dall'elenco; per usare modelli a pagamento occorre prima collegare un account con `/connect`.
 
 ## Come si prepara il repository
@@ -66,3 +66,14 @@ Il docente risponde nella stessa pagina, e la risposta arriva per posta elettron
 - `/crea es1` o `/crea progetto` — crea la cartella dell'attività, leggendo la consegna dal sito del corso;
 - `/verifica es1` — confronta il lavoro con i vincoli della consegna e dice quali non sono rispettati;
 - `/consegna es1` — controlla, pubblica e ricorda l'indirizzo da segnalare.
+
+Oltre a questi, l'agente ne ha di suoi. I più utili:
+
+- `/help` — elenco completo dei comandi;
+- `/models` — cambia il modello linguistico in uso;
+- `/connect` — collega un account, per usare modelli a pagamento;
+- `/undo` — annulla l'ultima richiesta e le modifiche ai file che ha prodotto (`/redo` le rimette);
+- `/new` — comincia una conversazione nuova, quando si cambia argomento;
+- `/sessions` — riprende una conversazione precedente;
+- `/init` — rilegge il progetto e aggiorna il file `AGENTS.md`;
+- `/export` — salva la conversazione in un file di testo.
