@@ -6,20 +6,16 @@ Le consegne, con obiettivi, vincoli e modalità di realizzazione, si trovano nel
 
 ## Prima di iniziare
 
-Servono tre programmi e due estensioni di Visual Studio Code, da installare nell'ordine, perché gli ultimi passaggi dipendono dai precedenti. Le scorciatoie da tastiera indicate sono quelle di Windows e Linux: su macOS, al posto di `Ctrl`, si usa `Cmd`.
+Servono due programmi e due estensioni di Visual Studio Code, da installare nell'ordine, perché gli ultimi passaggi dipendono dai precedenti. Le scorciatoie da tastiera indicate sono quelle di Windows e Linux: su macOS, al posto di `Ctrl`, si usa `Cmd`.
 
 1. [Visual Studio Code](https://code.visualstudio.com/), l'editor in cui si scrive il codice.
 2. [Git](https://git-scm.com/downloads), che non si apre e non si usa direttamente: è il programma con cui VS Code scarica e aggiorna il repository, e con cui OpenCode può annullare le proprie modifiche.
 3. L'estensione **Live Server** di VS Code, da *Visualizza › Estensioni* (`Ctrl+Shift+X`), cercandola per nome: serve a vedere lo sketch nel browser evitando problemi di sicurezza con il caricamento di immagini, suoni o dati.
-4. **OpenCode**, l'agente di programmazione. Si installa con npm, quindi serve prima [Node.js](https://nodejs.org/), che si installa come qualsiasi altro programma e si usa solo per questo. Poi, nel terminale di VS Code (*Terminale › Nuovo terminale*):
+4. **OpenCode**, l'agente di programmazione, seguendo la [documentazione della versione 1](https://opencode.ai/docs). La versione 2, appena uscita, è ancora instabile e va evitata. Il modo più rapido è il primo comando che la pagina propone, quello che comincia con `curl`, da copiare e incollare in un terminale: su macOS e su Linux va bene il terminale di VS Code (*Terminale › Nuovo terminale*), su Windows serve invece un terminale **Git Bash**, che si apre dalla freccia accanto al `+` del pannello del terminale ed è già sul computer, perché arriva con Git.
 
-   ```
-   npm install -g opencode-ai
-   ```
+   Finita l'installazione, chiudere e riaprire VS Code e controllare con `opencode --version` che risponda un numero che comincia per 1. Se il comando non viene riconosciuto, la stessa pagina propone l'installazione con `npm install -g opencode-ai`, che però richiede di installare prima [Node.js](https://nodejs.org/).
 
-   Va installata questa versione, non l'ultima uscita: l'estensione che la accompagna è stabile, mentre quella della versione 2 è ancora in prova e al momento non funziona. Se il comando `opencode` non viene riconosciuto, basta chiudere e riaprire VS Code.
-
-5. L'estensione **OpenCode** di VS Code, di nuovo da *Visualizza › Estensioni*: apre l'agente in un pannello laterale, più comodo della finestra bassa del terminale. Va installata quella senza l'etichetta *Beta*, che accompagna la versione appena installata. Dopo l'installazione conviene chiudere e riaprire VS Code.
+5. L'estensione **OpenCode** di VS Code, di nuovo da *Visualizza › Estensioni*: apre l'agente in un pannello laterale, più comodo della finestra bassa del terminale. Va installata quella pubblicata da **SST**, senza l'etichetta *Beta*: nel Marketplace ci sono anche versioni di prova e imitazioni di altri editori, che non funzionano con la versione installata. Dopo l'installazione conviene chiudere e riaprire VS Code.
 6. Al primo avvio l'agente sceglie da sé un modello gratuito. Per cambiarlo si scrive `/models` nella conversazione e si sceglie dall'elenco; per usare modelli a pagamento occorre prima collegare un account con `/connect`.
 
 ## Come si prepara il repository
