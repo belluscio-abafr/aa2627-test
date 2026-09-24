@@ -6,25 +6,26 @@ Le consegne, con obiettivi, vincoli e modalità di realizzazione, si trovano nel
 
 ## Prima di iniziare
 
-Servono tre programmi e due estensioni, da installare nell'ordine, perché gli ultimi passaggi dipendono dai precedenti.
+Servono due programmi e due estensioni di Visual Studio Code, da installare nell'ordine, perché gli ultimi passaggi dipendono dai precedenti. Le scorciatoie da tastiera indicate sono quelle di Windows e Linux: su macOS, al posto di `Ctrl`, si usa `Cmd`.
 
 1. [Visual Studio Code](https://code.visualstudio.com/), l'editor in cui si scrive il codice.
 2. [Git](https://git-scm.com/downloads), che non si apre e non si usa direttamente: è il programma con cui VS Code scarica e aggiorna il repository, e con cui OpenCode può annullare le proprie modifiche.
-3. L'estensione **Live Server**, da *Visualizza › Estensioni* (`Ctrl+Shift+X`): serve a vedere lo sketch nel browser evitando problemi di sicurezza con il caricamento di  immagini, suoni o dati.
-4. **OpenCode**, l'agente di programmazione, dalla sua [pagina di download](https://opencode.ai/download). Serve la versione **Terminale**, non l'app desktop, perché è quella che lavora dentro VS Code. La pagina propone diversi modi di installarla: il più semplice è il primo, il comando che comincia con `curl`, da copiare e incollare in un terminale. Su macOS e su Linux va bene il terminale di VS Code; su Windows serve invece un terminale **Git Bash**, che si apre dalla freccia accanto al `+` del pannello del terminale e che è già sul computer, perché arriva insieme a Git.
-5. L'estensione di OpenCode per VS Code **si installa da sé**: basta scrivere `opencode` in un terminale di VS Code (*Terminale › Nuovo terminale*) e confermare. Da lì in poi l'agente si apre con `Ctrl+Esc`.
-6. Al primo avvio OpenCode chiede con quale modello lavorare: si seguono le istruzioni indicate nel terminale.
+3. L'estensione **Live Server** di VS Code, da *Visualizza › Estensioni* (`Ctrl+Shift+X`), cercandola per nome: serve a vedere lo sketch nel browser evitando problemi di sicurezza con il caricamento di immagini, suoni o dati.
+4. **OpenCode**, l'agente di programmazione, dalla sua [pagina di download](https://opencode.ai/download). Serve la versione **Terminale**, non l'app desktop: è quella che l'estensione di VS Code usa per lavorare. La pagina propone diversi modi di installarla: il più semplice è il primo, il comando che comincia con `curl`, da copiare e incollare in un terminale. Su macOS e su Linux va bene il terminale di VS Code (*Terminale › Nuovo terminale*); su Windows serve invece un terminale **Git Bash**, che si apre dalla freccia accanto al `+` del pannello del terminale ed è già sul computer, perché arriva insieme a Git.
+5. L'estensione **OpenCode** di VS Code, di nuovo da *Visualizza › Estensioni*: apre l'agente in un pannello laterale, più comodo della finestra bassa del terminale. Dopo l'installazione conviene chiudere e riaprire VS Code.
+6. Al primo avvio l'agente sceglie da sé un modello gratuito. Per cambiarlo si scrive `/models` nella conversazione e si sceglie dall'elenco; per usare modelli a pagamento occorre prima collegare un account con `/connect`.
 
 ## Come si prepara il repository
 
 Una volta sola, all'inizio del corso.
 
-1. Creare la propria copia del modello: nella pagina del repository del corso, premere **Use this template › Create a new repository**, dare al repository il nome `aa2627-ca`, lasciarlo **Public** e premere *Create repository*. La copia è indipendente e resta sul proprio profilo.
-2. Attivare GitHub Pages, che pubblica i lavori: *Settings › Pages › Source: Deploy from a branch › main › / (root) › Save*.
-3. Aggiungere il docente come collaboratore, per le revisioni dirette: *Settings › Collaborators › Add people*.
-4. Copiare l'indirizzo del proprio repository: nella sua pagina, pulsante verde **Code**, scheda *HTTPS*, icona della copia.
-5. Scaricare il repository sul proprio computer: in VS Code, *Visualizza › Riquadro comandi* (`Ctrl+Shift+P`), scrivere `clona` e scegliere *Git: Clona*; poi incollare l'indirizzo e indicare la cartella dove metterlo. Alla domanda se aprire il repository clonato, rispondere di sì.
-6. Con la cartella aperta, lanciare OpenCode con `Ctrl+Esc` e dare il comando `/inizio`, che scrive il proprio nome nelle pagine e l'indirizzo pubblico in questo file.
+1. Creare un profilo su [github.com](https://github.com/signup), se non se ne ha già uno. Il nome utente scelto comparirà negli indirizzi dei propri lavori, quindi conviene sceglierlo breve e leggibile. Registrandosi con la posta dell'Accademia si può poi chiedere il [GitHub Student Developer Pack](https://education.github.com/pack), che dà gratuitamente il piano Pro.
+2. Creare la propria copia del modello: nella pagina del repository del corso, premere **Use this template › Create a new repository**, dare al proprio repository il nome `computer-art-2627`, lasciarlo **Public** e premere *Create repository*. La copia è indipendente e resta sul proprio profilo.
+3. Attivare GitHub Pages, che pubblica i lavori: *Settings › Pages › Source: Deploy from a branch › main › / (root) › Save*.
+4. Aggiungere il docente come collaboratore, per le revisioni dirette: *Settings › Collaborators › Add people*.
+5. Copiare l'indirizzo del **proprio** repository, quello appena creato, che GitHub mostra subito dopo la creazione: pulsante verde **Code**, scheda *HTTPS*, icona della copia.
+6. Scaricare il repository sul proprio computer: in VS Code, *Visualizza › Riquadro comandi* (`Ctrl+Shift+P`), scrivere `clona` e scegliere *Git: Clona*; poi incollare l'indirizzo e indicare la cartella dove metterlo. Alla domanda se aprire il repository clonato, rispondere di sì.
+7. Con la cartella aperta, aprire l'estensione di OpenCode e dare il comando `/inizio`, che scrive il proprio nome nelle pagine e l'indirizzo pubblico in questo file.
 
 ## Come si lavora
 
@@ -36,7 +37,7 @@ Una volta sola, all'inizio del corso.
 
 4. Pubblicare il lavoro: aprire *Visualizza › Controllo del codice sorgente* (`Ctrl+Shift+G`), scrivere un messaggio che dica che cosa è stato fatto, premere **Commit** e poi **Sincronizza**.
 
-Dopo circa un minuto il lavoro è online all'indirizzo `https://NOMEUTENTE.github.io/aa2627-ca/es1/`, con il proprio nome utente di GitHub al posto di `NOMEUTENTE` e la cartella giusta al posto di `es1`.
+Dopo circa un minuto il lavoro è online all'indirizzo `https://NOMEUTENTE.github.io/computer-art-2627/es1/`, con il proprio nome utente di GitHub al posto di `NOMEUTENTE` e la cartella giusta al posto di `es1`.
 
 Le cartelle si chiamano `es1`, `es2`, … e `progetto`: sono gli stessi nomi delle consegne sul sito, e non sono nomi liberi, perché su quelli si costruiscono l'indirizzo del lavoro pubblicato e il collegamento con la consegna.
 
