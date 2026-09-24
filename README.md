@@ -6,13 +6,18 @@ Le consegne, con obiettivi, vincoli e modalità di realizzazione, si trovano nel
 
 ## Prima di iniziare
 
-Servono due programmi e due estensioni di Visual Studio Code, da installare nell'ordine, perché gli ultimi passaggi dipendono dai precedenti. Le scorciatoie da tastiera indicate sono quelle di Windows e Linux: su macOS, al posto di `Ctrl`, si usa `Cmd`.
+Servono tre programmi e due estensioni di Visual Studio Code, da installare nell'ordine, perché gli ultimi passaggi dipendono dai precedenti. Le scorciatoie da tastiera indicate sono quelle di Windows e Linux: su macOS, al posto di `Ctrl`, si usa `Cmd`.
 
 1. [Visual Studio Code](https://code.visualstudio.com/), l'editor in cui si scrive il codice.
 2. [Git](https://git-scm.com/downloads), che non si apre e non si usa direttamente: è il programma con cui VS Code scarica e aggiorna il repository, e con cui OpenCode può annullare le proprie modifiche.
 3. L'estensione **Live Server** di VS Code, da *Visualizza › Estensioni* (`Ctrl+Shift+X`), cercandola per nome: serve a vedere lo sketch nel browser evitando problemi di sicurezza con il caricamento di immagini, suoni o dati.
-4. **OpenCode**, l'agente di programmazione, dalla sua [pagina di download](https://opencode.ai/download). Serve la versione **Terminale**, non l'app desktop: è quella che l'estensione di VS Code usa per lavorare. La pagina propone diversi modi di installarla: il più semplice è il primo, il comando che comincia con `curl`, da copiare e incollare in un terminale. Su macOS e su Linux va bene il terminale di VS Code (*Terminale › Nuovo terminale*); su Windows serve invece un terminale **Git Bash**, che si apre dalla freccia accanto al `+` del pannello del terminale ed è già sul computer, perché arriva insieme a Git.
-   Se dopo l'installazione il comando `opencode` non viene riconosciuto (`command not found`), manca il percorso del programma: basta chiudere e riaprire VS Code, e se non basta seguire l'avvertenza che l'installazione stampa alla fine, dove indica la riga da aggiungere alla configurazione del terminale. Su macOS, chi ha già **Homebrew** può evitare il problema installando con `brew` invece che con `curl`, sempre seguendo la pagina di download.
+4. **OpenCode**, l'agente di programmazione. La sua [pagina di installazione](https://opencode.ai/v2/docs) propone molti modi per installarlo: quello che funziona allo stesso modo su Windows e su macOS, senza dover sistemare percorsi a mano, passa da npm. Serve quindi prima [Node.js](https://nodejs.org/), che si installa come qualsiasi altro programma e si usa solo per questo, e poi, nel terminale di VS Code (*Terminale › Nuovo terminale*), il comando
+
+   ```
+   npm install -g @opencode/cli
+   ```
+
+   Va installata la versione **Terminale**, non l'app desktop: è quella che l'estensione di VS Code usa per lavorare. Se più avanti il comando `opencode` non viene riconosciuto, basta chiudere e riaprire VS Code.
 
 5. L'estensione **OpenCode** di VS Code, di nuovo da *Visualizza › Estensioni*: apre l'agente in un pannello laterale, più comodo della finestra bassa del terminale. Dopo l'installazione conviene chiudere e riaprire VS Code.
 6. Al primo avvio l'agente sceglie da sé un modello gratuito. Per cambiarlo si scrive `/models` nella conversazione e si sceglie dall'elenco; per usare modelli a pagamento occorre prima collegare un account con `/connect`.
