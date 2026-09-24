@@ -1,0 +1,41 @@
+name: Consegna
+description: Segnalare la consegna di un'esercitazione o di una fase del progetto
+title: "Consegna: "
+labels: ["consegna"]
+body:
+  - type: input
+    id: utente
+    attributes:
+      label: Nome utente GitHub
+      description: Quello che compare nell'indirizzo del lavoro.
+      placeholder: nomeutente
+    validations:
+      required: true
+  - type: dropdown
+    id: attivita
+    attributes:
+      label: Attività
+      options:
+        - Es1
+        - Es2
+        - Es3
+        - Es4
+        - Progetto — idea
+        - Progetto — revisione intermedia
+        - Progetto — consegna finale
+    validations:
+      required: true
+  - type: input
+    id: indirizzo
+    attributes:
+      label: Indirizzo del lavoro
+      placeholder: https://nomeutente.github.io/aa2627-ca/es1/
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: Note
+      description: Difficoltà incontrate, parti da rivedere, domande per la revisione.
+    validations:
+      required: false

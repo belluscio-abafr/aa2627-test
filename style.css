@@ -1,0 +1,29 @@
+/* Foglio di stile comune all'elenco dei lavori e alle pagine degli sketch */
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.lavori {
+  padding-left: 1.2rem;
+}
+
+.lavori li {
+  margin-bottom: 0.3rem;
+}
+
+/* La tela di p5.js: nessun margine, così lo sketch resta isolato */
+canvas {
+  display: block;
+  margin: 1rem 0;
+}
