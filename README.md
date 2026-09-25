@@ -53,11 +53,11 @@ Le cartelle si chiamano `es1`, `es2`, … e `progetto`: sono gli stessi nomi del
 
 La consegna si segnala **dopo** aver fatto Commit e Sincronizza: se il lavoro non è stato pubblicato, all'indirizzo segnalato non si vede nulla o si vede la versione vecchia.
 
-1. Aprire nel browser l'indirizzo del proprio lavoro, controllare che sia quello giusto e copiarlo dalla barra degli indirizzi: servirà fra poco.
+1. Aprire nel browser il proprio elenco dei lavori, `https://NOMEUTENTE.github.io/aa2627-ca-lavori/`, entrare nella cartella dell'attività consegnata e copiare l'indirizzo dalla barra: servirà fra poco. Non va confuso con l'indirizzo che mostra Live Server, che comincia per `127.0.0.1` e funziona solo sul proprio computer.
 2. aprire [github.com/belluscio-abafr/aa2627-ca/issues](https://github.com/belluscio-abafr/aa2627-ca/issues);
 3. premere il pulsante verde **New issue**;
 4. scegliere **Consegna** fra i moduli proposti e premere *Get started*;
-5. compilare i campi: nome utente di GitHub, attività consegnata, l'indirizzo copiato prima, eventuali note per la revisione;
+5. completare il titolo con la cartella dell'attività, così da avere `Consegna: es1`, e compilare i campi: l'indirizzo copiato prima ed eventuali note per la revisione;
 6. premere **Create** in fondo alla pagina.
 
 Il docente risponde nella stessa pagina, e la risposta arriva per posta elettronica. La issue viene chiusa quando la revisione è conclusa: le issue aperte sono i lavori ancora da rivedere.
