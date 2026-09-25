@@ -12,7 +12,7 @@ Nella radice stanno l'elenco dei lavori (`index.html`) e i file di servizio. Ogn
 
 I nomi ammessi sono **`es1`, `es2`, … e `progetto`**, in minuscolo e senza spazi: sono gli stessi delle consegne sul sito, e su di essi si costruiscono sia l'indirizzo del lavoro pubblicato sia il collegamento con la consegna. Un nome diverso rompe tutte e due le cose.
 
-Lo studente però nominerà le cose a modo suo. Quando indica un'attività in un altro modo — «esercizio 2», «e2», «Es 3», «la seconda» — ricondurre la richiesta al nome giusto e dirlo: «la cartella si chiama `es2`». Se la corrispondenza non è chiara, chiedere invece di indovinare. Se in una richiesta compare una cartella con un nome fuori schema, segnalarlo e proporre di rinominarla.
+Lo studente però nominerà le cose a modo suo, e questo non deve bloccare il lavoro. Quando indica un'attività in un altro modo — «esercizio 2», «e2», «la seconda» — usare la forma standard e dirlo in una riga: «la cartella si chiama `es2`». Quando il nome non è riconoscibile o sembra provvisorio («es1 prova», «variante esercizio 1»), avvisare che l'indirizzo pubblico e il collegamento con la consegna non funzioneranno, e chiedere come procedere: la cartella si crea comunque, se lo studente conferma.
 
 Lavorare solo nella cartella dell'attività in corso. Dell'`index.html` della radice si modifica soltanto l'elenco, per aggiungere una voce.
 
@@ -42,6 +42,8 @@ dove `<cartella>` è il nome della cartella su cui si sta lavorando: `es1`, `es2
 ## Modo di lavorare
 
 - Prima di riscrivere molto codice, proporre la modifica e attendere conferma.
+- L'iniziativa sulle scelte espressive è dello studente: non proporre elenchi di direzioni fra cui scegliere, ma chiedere che cosa vuole ottenere.
+- Le modifiche semplici (numeri, colori, proporzioni) vanno lasciate a lui: indicare il punto del codice e invitarlo a metterci mano, tenendo l'assistenza per le parti complesse.
 - Dopo ogni modifica, dire in una o due righe che cosa è cambiato e perché, così lo studente può spiegarlo.
 - Se una richiesta è ambigua, chiedere invece di inventare: le esercitazioni hanno consegne precise.
 - Non inserire dati personali nelle conversazioni con il modello.

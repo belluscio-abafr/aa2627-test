@@ -11,9 +11,12 @@ Servono due programmi e due estensioni di Visual Studio Code, da installare nell
 1. [Visual Studio Code](https://code.visualstudio.com/), l'editor in cui si scrive il codice.
 2. [Git](https://git-scm.com/downloads), che non si apre e non si usa direttamente: è il programma con cui VS Code scarica e aggiorna il repository, e con cui OpenCode può annullare le proprie modifiche.
 3. L'estensione **Live Server** di VS Code, da *Visualizza › Estensioni* (`Ctrl+Shift+X`), cercandola per nome: serve a vedere lo sketch nel browser evitando problemi di sicurezza con il caricamento di immagini, suoni o dati.
-4. **OpenCode**, l'agente di programmazione, seguendo la [documentazione della versione 1](https://opencode.ai/docs). La versione 2, appena uscita, è ancora instabile e va evitata. Il modo più rapido è il primo comando che la pagina propone, quello che comincia con `curl`, da copiare e incollare in un terminale: su macOS e su Linux va bene il terminale di VS Code (*Terminale › Nuovo terminale*), su Windows serve invece un terminale **Git Bash**, che si apre dalla freccia accanto al `+` del pannello del terminale ed è già sul computer, perché arriva con Git.
+4. **OpenCode**, l'agente di programmazione, seguendo la [documentazione della versione 1](https://opencode.ai/docs). La versione 2, appena uscita, è ancora instabile e va evitata. La pagina propone diversi modi di installarlo; questi sono i due già provati:
 
-   Finita l'installazione, chiudere e riaprire VS Code e controllare con `opencode --version` che risponda un numero che comincia per 1. Se il comando non viene riconosciuto, la stessa pagina propone l'installazione con `npm install -g opencode-ai`, che però richiede di installare prima [Node.js](https://nodejs.org/).
+   - su **macOS** e su Linux, il comando che comincia con `curl`, da incollare nel terminale di VS Code (*Terminale › Nuovo terminale*);
+   - su **Windows**, `npm install -g opencode-ai`, che però richiede di installare prima [Node.js](https://nodejs.org/).
+
+   Finita l'installazione, chiudere e riaprire VS Code e controllare con `opencode --version` che risponda un numero che comincia per 1.
 
 5. L'estensione **OpenCode** di VS Code, di nuovo da *Visualizza › Estensioni*: apre l'agente in un pannello laterale, più comodo della finestra bassa del terminale. Va installata quella pubblicata da **SST**, senza l'etichetta *Beta*: nel Marketplace ci sono anche versioni di prova e imitazioni di altri editori, che non funzionano con la versione installata. Dopo l'installazione conviene chiudere e riaprire VS Code.
 6. Al primo avvio l'agente sceglie da sé un modello gratuito. Per cambiarlo si scrive `/models` nella conversazione e si sceglie dall'elenco; per usare modelli a pagamento occorre prima collegare un account con `/connect`.
@@ -38,7 +41,9 @@ Una volta sola, all'inizio del corso.
 
    Conviene attivare il salvataggio automatico, *File › Salvataggio automatico*: con Live Server il browser si aggiorna a ogni salvataggio, quindi le modifiche si vedono mentre si scrive, senza premere ogni volta `Ctrl+S`.
 
-4. Pubblicare il lavoro: aprire *Visualizza › Controllo del codice sorgente* (`Ctrl+Shift+G`), scrivere un messaggio che dica che cosa è stato fatto, premere **Commit** e poi **Sincronizza**.
+4. Pubblicare il lavoro: aprire *Visualizza › Controllo del codice sorgente* (`Ctrl+Shift+G`), **scrivere un messaggio** che dica che cosa è stato fatto, premere **Commit** e poi **Sincronizza**.
+
+   Il messaggio non è facoltativo: senza, il pulsante *Commit* non conclude niente, ed è il motivo per cui a volte sembra che non funzioni. Bastano poche parole, come «prima versione di es1» o «colori più scuri e sfondo nero».
 
 Dopo circa un minuto il lavoro è online all'indirizzo `https://NOMEUTENTE.github.io/aa2627-ca-lavori/es1/`, con il proprio nome utente di GitHub al posto di `NOMEUTENTE` e la cartella giusta al posto di `es1`.
 
@@ -46,13 +51,14 @@ Le cartelle si chiamano `es1`, `es2`, … e `progetto`: sono gli stessi nomi del
 
 ## Come si consegna
 
-Quando il lavoro è concluso e pubblicato, si segnala aprendo una *issue* nel repository del corso, che è il registro delle consegne:
+La consegna si segnala **dopo** aver fatto Commit e Sincronizza: se il lavoro non è stato pubblicato, all'indirizzo segnalato non si vede nulla o si vede la versione vecchia.
 
-1. aprire [github.com/belluscio-abafr/aa2627-ca/issues](https://github.com/belluscio-abafr/aa2627-ca/issues);
-2. premere il pulsante verde **New issue**;
-3. scegliere **Consegna** fra i moduli proposti e premere *Get started*;
-4. compilare i campi: nome utente di GitHub, attività consegnata, indirizzo del lavoro, eventuali note per la revisione;
-5. premere **Create** in fondo alla pagina.
+1. Aprire nel browser l'indirizzo del proprio lavoro, controllare che sia quello giusto e copiarlo dalla barra degli indirizzi: servirà fra poco.
+2. aprire [github.com/belluscio-abafr/aa2627-ca/issues](https://github.com/belluscio-abafr/aa2627-ca/issues);
+3. premere il pulsante verde **New issue**;
+4. scegliere **Consegna** fra i moduli proposti e premere *Get started*;
+5. compilare i campi: nome utente di GitHub, attività consegnata, l'indirizzo copiato prima, eventuali note per la revisione;
+6. premere **Create** in fondo alla pagina.
 
 Il docente risponde nella stessa pagina, e la risposta arriva per posta elettronica. La issue viene chiusa quando la revisione è conclusa: le issue aperte sono i lavori ancora da rivedere.
 
