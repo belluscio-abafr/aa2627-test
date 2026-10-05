@@ -6,20 +6,15 @@ Le consegne, con obiettivi, vincoli e modalità di realizzazione, si trovano nel
 
 ## Prima di iniziare
 
-Servono due programmi e due estensioni di Visual Studio Code, da installare nell'ordine, perché gli ultimi passaggi dipendono dai precedenti. Le scorciatoie da tastiera indicate sono quelle di Windows e Linux: su macOS, al posto di `Ctrl`, si usa `Cmd`.
+Servono **Visual Studio Code**, **Git**, **OpenCode** e due estensioni, OpenCode e Live Server. L'installazione, passo per passo e con le immagini, sta in due guide del sito del corso, una per sistema:
 
-1. [Visual Studio Code](https://code.visualstudio.com/), l'editor in cui si scrive il codice.
-2. [Git](https://git-scm.com/downloads), che non si apre e non si usa direttamente: è il programma con cui VS Code scarica e aggiorna il repository, e con cui OpenCode può annullare le proprie modifiche.
-3. L'estensione **Live Server** di VS Code, da *Visualizza › Estensioni* (`Ctrl+Shift+X`), cercandola per nome: serve a vedere lo sketch nel browser evitando problemi di sicurezza con il caricamento di immagini, suoni o dati.
-4. **OpenCode**, l'agente di programmazione, seguendo la [documentazione della versione 1](https://opencode.ai/docs). La versione 2, appena uscita, è ancora instabile e va evitata. La pagina propone diversi modi di installarlo; questi sono i due già provati:
+- [Visual Studio Code e OpenCode su Windows](https://codestesie.it/guide/vscode-opencode-windows/)
+- [Visual Studio Code e OpenCode su macOS](https://codestesie.it/guide/vscode-opencode-macos/)
 
-   - su **macOS** e su Linux, il comando che comincia con `curl`, da incollare nel terminale di VS Code (*Terminale › Nuovo terminale*);
-   - su **Windows**, `npm install -g opencode-ai`, che però richiede di installare prima [Node.js](https://nodejs.org/).
+Una cosa le guide non la dicono, perché riguarda solo il corso: al primo avvio l'agente sceglie da sé un modello gratuito, e per cambiarlo si scrive `/models` nella conversazione e si sceglie dall'elenco; per usare modelli a pagamento occorre prima collegare un account con `/connect`.
 
-   Finita l'installazione, chiudere e riaprire VS Code e controllare con `opencode --version` che risponda un numero che comincia per 1.
+Le scorciatoie da tastiera indicate qui e più avanti sono quelle di Windows: su macOS, al posto di `Ctrl`, si usa `Cmd`.
 
-5. L'estensione **OpenCode** di VS Code, di nuovo da *Visualizza › Estensioni*: apre l'agente in un pannello laterale, più comodo della finestra bassa del terminale. Va installata quella pubblicata da **SST**, senza l'etichetta *Beta*: nel Marketplace ci sono anche versioni di prova e imitazioni di altri editori, che non funzionano con la versione installata. Dopo l'installazione conviene chiudere e riaprire VS Code.
-6. Al primo avvio l'agente sceglie da sé un modello gratuito. Per cambiarlo si scrive `/models` nella conversazione e si sceglie dall'elenco; per usare modelli a pagamento occorre prima collegare un account con `/connect`.
 
 ## Come si prepara il repository
 
