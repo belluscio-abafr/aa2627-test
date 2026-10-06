@@ -8,7 +8,9 @@ Rispondere e scrivere in italiano, commenti nel codice compresi.
 
 ## Struttura e nomi delle cartelle
 
-Nella radice stanno l'elenco dei lavori (`index.html`) e i file di servizio. Ogni attività ha la sua cartella, creata quando serve, con `index.html`, `sketch.js` e un `style.css` proprio: niente file condivisi fra le cartelle, perché ogni esercitazione ha bisogno di pochissimo stile e le conviene tenerlo per sé.
+Nella radice stanno l'elenco dei lavori (`index.html`) e i file di servizio. Ogni attività ha la sua cartella, creata quando serve, con `index.html`, `sketch.js`, un `style.css` proprio e un `README.md` che mostra l'anteprima: niente file condivisi fra le cartelle, perché ogni esercitazione ha bisogno di pochissimo stile e le conviene tenerlo per sé.
+
+Nella cartella va anche `preview.png`, l'immagine del lavoro finito, che lo studente crea quando il lavoro è pronto: serve all'anteprima nella pagina delle revisioni del corso, ed è richiesta dalle specifiche di ogni attività. Il `README.md` della cartella la mostra, quindi se manca si vede.
 
 I nomi ammessi sono **`es1`, `es2`, …**, in minuscolo e senza spazi: sono gli stessi delle consegne sul sito, e su di essi si costruiscono sia l'indirizzo del lavoro pubblicato sia il collegamento con la consegna. Un nome diverso rompe tutte e due le cose.
 

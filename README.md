@@ -1,6 +1,6 @@
 # Computer Art 2026/27: le esercitazioni
 
-Repository personale per le esercitazioni del corso di **Computer Art**, Accademia di Belle Arti di Frosinone. Il progetto del secondo trimestre va in un repository a parte, creato da sé: se ne parla in fondo a questa pagina.
+Repository personale per le esercitazioni del corso di **Computer Art**, Accademia di Belle Arti di Frosinone.
 
 Le consegne, con obiettivi, vincoli e modalità di realizzazione, si trovano nella sezione [Attività](https://codestesie.it/aa2627/ca/attivita/) del sito del corso: sono quelle il riferimento, e vanno lette per intero prima di iniziare.
 
@@ -18,7 +18,7 @@ Le scorciatoie da tastiera indicate qui e più avanti sono quelle di Windows: su
 
 ## Come si prepara il repository
 
-Una volta sola, all'inizio del corso.
+Una volta sola, all'inizio del corso. I primi cinque passaggi si fanno **sul sito di GitHub**, con il browser; gli ultimi due in **Visual Studio Code**.
 
 1. Creare un profilo su [github.com](https://github.com/signup), se non se ne ha già uno. Il nome utente scelto comparirà negli indirizzi dei propri lavori, quindi conviene sceglierlo breve e leggibile. Registrandosi con la posta dell'Accademia si può poi chiedere il [GitHub Student Developer Pack](https://education.github.com/pack), che dà gratuitamente il piano Pro.
 2. Creare la propria copia del modello: nella pagina del repository del corso, premere **Use this template › Create a new repository**, dare al proprio repository il nome `aa2627-ca-lavori`, lasciarlo **Public** e premere *Create repository*. La copia è indipendente e resta sul proprio profilo.
@@ -30,21 +30,25 @@ Una volta sola, all'inizio del corso.
 
 ## Come si lavora
 
+Da qui in avanti si lavora **in Visual Studio Code**, nella cartella scaricata sul proprio computer: sul sito di GitHub non c'è più niente da fare a mano.
+
 1. Creare la cartella dell'esercitazione con il comando `/crea es1`.
 2. Scrivere il codice in `sketch.js`, dentro quella cartella.
 3. Vedere il risultato: tasto destro su `index.html` della cartella › *Open with Live Server*.
 
-   Conviene attivare il salvataggio automatico, *File › Salvataggio automatico*: con Live Server il browser si aggiorna a ogni salvataggio, quindi le modifiche si vedono mentre si scrive, senza premere ogni volta `Ctrl+S`.
+   > Conviene attivare il salvataggio automatico, *File › Salvataggio automatico*: con Live Server il browser si aggiorna a ogni salvataggio, quindi le modifiche si vedono mentre si scrive, senza premere ogni volta `Ctrl+S`.
 
 4. Pubblicare il lavoro: aprire *Visualizza › Controllo del codice sorgente* (`Ctrl+Shift+G`), **scrivere un messaggio** che dica che cosa è stato fatto, premere **Commit** e poi **Sincronizza**.
 
-   Il messaggio non è facoltativo: senza, il pulsante *Commit* non conclude niente, ed è il motivo per cui a volte sembra che non funzioni. Bastano poche parole, come «prima versione di es1» o «colori più scuri e sfondo nero».
+   > Il messaggio non è facoltativo: senza, il pulsante *Commit* non conclude niente, ed è il motivo per cui a volte sembra che non funzioni. Bastano poche parole, come «prima versione di es1» o «colori più scuri e sfondo nero».
 
 Dopo circa un minuto il lavoro è online all'indirizzo `https://NOMEUTENTE.github.io/aa2627-ca-lavori/es1/`, con il proprio nome utente di GitHub al posto di `NOMEUTENTE` e la cartella giusta al posto di `es1`.
 
 Le cartelle si chiamano `es1`, `es2` e così via: sono gli stessi nomi delle consegne sul sito, e non sono nomi liberi, perché su quelli si costruiscono l'indirizzo del lavoro pubblicato e il collegamento con la consegna.
 
 ## Come si consegna
+
+Il primo passaggio si fa **in Visual Studio Code**, il secondo **nel browser**.
 
 1. Dare all'agente il comando **`/consegna es1`**, con il nome della cartella: controlla che sia completa, fa commit e sincronizzazione, e poi compone e mostra **l'indirizzo pubblico del lavoro**.
 2. Aprire il [modulo delle consegne](INDIRIZZO-DEL-MODULO) e compilarlo: l'esercitazione, cognome e nome, l'indirizzo appena mostrato dal comando ed eventuali note.
@@ -56,15 +60,6 @@ Non serve nessun account per compilare il modulo. Nelle note conviene scrivere s
 **La revisione arriva nella chat di Teams**, non qui. Se dopo la consegna si continua a lavorare sulla stessa esercitazione, si rifà la consegna: vale l'ultima.
 
 > **Se l'indirizzo serve senza passare dal comando.** Si pubblica il lavoro con Commit e Sincronizza, si apre nel browser il proprio elenco dei lavori, `https://NOMEUTENTE.github.io/aa2627-ca-lavori/`, si entra nella cartella dell'esercitazione e si copia l'indirizzo dalla barra. È lo stesso che compone `/consegna`. Non va confuso con quello di Live Server, che comincia per `127.0.0.1` e funziona solo sul proprio computer.
-
-## Il progetto
-
-Il progetto del secondo trimestre **non va in questo repository**: ognuno ne crea uno suo, con il nome che preferisce, così l'indirizzo del lavoro finito non è legato al corso e si può mettere in un portfolio.
-
-Serve quello che si è già imparato qui, ma dall'inizio: creare il repository su GitHub, metterci `index.html`, `style.css` e `sketch.js`, attivare GitHub Pages da *Settings › Pages* e, se si vuole usare l'agente come qui, farsi scrivere `AGENTS.md` con il comando `/init`. Le istruzioni per esteso stanno nella [consegna del progetto](https://codestesie.it/aa2627/ca/attivita/progetto/).
-
-La consegna si segnala con lo stesso modulo, scegliendo *progetto* fra le attività.
-
 
 ## I comandi di OpenCode
 
