@@ -46,20 +46,16 @@ Le cartelle si chiamano `es1`, `es2` e così via: sono gli stessi nomi delle con
 
 ## Come si consegna
 
-La via più breve è il comando **`/consegna es1`**: controlla che la cartella sia completa, fa commit e sincronizzazione, e poi compone e mostra **l'indirizzo pubblico del lavoro**, che è quello da segnalare. Resta solo da aprire il modulo.
-
-A mano si fa così, ed è utile saperlo perché è lo stesso indirizzo:
-
-1. pubblicare il lavoro con Commit e Sincronizza, come nella sezione precedente. Se il lavoro non è stato pubblicato, all'indirizzo segnalato non si vede nulla, o si vede la versione vecchia;
-2. aprire nel browser il proprio elenco dei lavori, `https://NOMEUTENTE.github.io/aa2627-ca-lavori/`, entrare nella cartella dell'esercitazione e copiare l'indirizzo dalla barra. Non va confuso con quello che mostra Live Server, che comincia per `127.0.0.1` e funziona solo sul proprio computer.
-
-Poi si apre il [modulo delle consegne](INDIRIZZO-DEL-MODULO) e si compila: l'esercitazione, cognome e nome, l'indirizzo del lavoro ed eventuali note.
+1. Dare all'agente il comando **`/consegna es1`**, con il nome della cartella: controlla che sia completa, fa commit e sincronizzazione, e poi compone e mostra **l'indirizzo pubblico del lavoro**.
+2. Aprire il [modulo delle consegne](INDIRIZZO-DEL-MODULO) e compilarlo: l'esercitazione, cognome e nome, l'indirizzo appena mostrato dal comando ed eventuali note.
 
 <!-- Da sostituire con l'indirizzo del modulo di Google, quello precompilato per questo corso. -->
 
-Non serve nessun account per compilarlo. Nelle note conviene scrivere su che cosa si vogliono osservazioni, o che cosa non ha funzionato: è la parte che rende utile la revisione.
+Non serve nessun account per compilare il modulo. Nelle note conviene scrivere su che cosa si vogliono osservazioni, o che cosa non ha funzionato: è la parte che rende utile la revisione.
 
 **La revisione arriva nella chat di Teams**, non qui. Se dopo la consegna si continua a lavorare sulla stessa esercitazione, si rifà la consegna: vale l'ultima.
+
+> **Se l'indirizzo serve senza passare dal comando.** Si pubblica il lavoro con Commit e Sincronizza, si apre nel browser il proprio elenco dei lavori, `https://NOMEUTENTE.github.io/aa2627-ca-lavori/`, si entra nella cartella dell'esercitazione e si copia l'indirizzo dalla barra. È lo stesso che compone `/consegna`. Non va confuso con quello di Live Server, che comincia per `127.0.0.1` e funziona solo sul proprio computer.
 
 ## Il progetto
 
@@ -72,18 +68,20 @@ La consegna si segnala con lo stesso modulo, scegliendo *progetto* fra le attivi
 
 ## I comandi di OpenCode
 
-- `/inizio` — scrive il proprio nome e l'indirizzo pubblico del repository;
+Quattro comandi sono stati scritti per questo corso e funzionano solo in questo repository:
+
+- `/inizio`: scrive il proprio nome e l'indirizzo pubblico del repository;
 - `/crea es1`: crea la cartella dell'esercitazione, leggendo la consegna dal sito del corso;
-- `/verifica es1` — confronta il lavoro con i vincoli della consegna e dice quali non sono rispettati;
-- `/consegna es1` — controlla, pubblica e ricorda l'indirizzo da segnalare.
+- `/verifica es1`: confronta il lavoro con i vincoli della consegna e dice quali non sono rispettati;
+- `/consegna es1`: controlla, pubblica e ricorda l'indirizzo da segnalare.
 
-Oltre a questi, l'agente ne ha di suoi. I più utili:
+Gli altri sono di OpenCode e funzionano in qualsiasi cartella. I più utili:
 
-- `/help` — elenco completo dei comandi;
-- `/models` — cambia il modello linguistico in uso;
-- `/connect` — collega un account, per usare modelli a pagamento;
-- `/undo` — annulla l'ultima richiesta e le modifiche ai file che ha prodotto (`/redo` le rimette);
-- `/new` — comincia una conversazione nuova, quando si cambia argomento;
-- `/sessions` — riprende una conversazione precedente;
-- `/init` — rilegge il progetto e aggiorna il file `AGENTS.md`;
-- `/export` — salva la conversazione in un file di testo.
+- `/help`: elenco completo dei comandi;
+- `/models`: cambia il modello linguistico in uso;
+- `/connect`: collega un account, per usare modelli a pagamento;
+- `/undo`: annulla l'ultima richiesta e le modifiche ai file che ha prodotto (`/redo` le rimette);
+- `/new`: comincia una conversazione nuova, quando si cambia argomento;
+- `/sessions`: riprende una conversazione precedente;
+- `/init`: rilegge il progetto e aggiorna il file `AGENTS.md`;
+- `/export`: salva la conversazione in un file di testo.
