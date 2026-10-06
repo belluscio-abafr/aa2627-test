@@ -1,6 +1,6 @@
-# Computer Art 2026/27 — esercitazioni e progetto
+# Computer Art 2026/27: le esercitazioni
 
-Repository personale per le esercitazioni e il progetto del corso di **Computer Art**, Accademia di Belle Arti di Frosinone.
+Repository personale per le esercitazioni del corso di **Computer Art**, Accademia di Belle Arti di Frosinone. Il progetto del secondo trimestre va in un repository a parte, creato da sé: se ne parla in fondo a questa pagina.
 
 Le consegne, con obiettivi, vincoli e modalità di realizzazione, si trovano nella sezione [Attività](https://codestesie.it/aa2627/ca/attivita/) del sito del corso: sono quelle il riferimento, e vanno lette per intero prima di iniziare.
 
@@ -30,7 +30,7 @@ Una volta sola, all'inizio del corso.
 
 ## Come si lavora
 
-1. Creare la cartella dell'attività con il comando `/crea es1`, oppure `/crea progetto`.
+1. Creare la cartella dell'esercitazione con il comando `/crea es1`.
 2. Scrivere il codice in `sketch.js`, dentro quella cartella.
 3. Vedere il risultato: tasto destro su `index.html` della cartella › *Open with Live Server*.
 
@@ -42,25 +42,35 @@ Una volta sola, all'inizio del corso.
 
 Dopo circa un minuto il lavoro è online all'indirizzo `https://NOMEUTENTE.github.io/aa2627-ca-lavori/es1/`, con il proprio nome utente di GitHub al posto di `NOMEUTENTE` e la cartella giusta al posto di `es1`.
 
-Le cartelle si chiamano `es1`, `es2`, … e `progetto`: sono gli stessi nomi delle consegne sul sito, e non sono nomi liberi, perché su quelli si costruiscono l'indirizzo del lavoro pubblicato e il collegamento con la consegna.
+Le cartelle si chiamano `es1`, `es2` e così via: sono gli stessi nomi delle consegne sul sito, e non sono nomi liberi, perché su quelli si costruiscono l'indirizzo del lavoro pubblicato e il collegamento con la consegna.
 
 ## Come si consegna
 
 La consegna si segnala **dopo** aver fatto Commit e Sincronizza: se il lavoro non è stato pubblicato, all'indirizzo segnalato non si vede nulla o si vede la versione vecchia.
 
 1. Aprire nel browser il proprio elenco dei lavori, `https://NOMEUTENTE.github.io/aa2627-ca-lavori/`, entrare nella cartella dell'attività consegnata e copiare l'indirizzo dalla barra: servirà fra poco. Non va confuso con l'indirizzo che mostra Live Server, che comincia per `127.0.0.1` e funziona solo sul proprio computer.
-2. aprire [github.com/belluscio-abafr/aa2627-ca/issues](https://github.com/belluscio-abafr/aa2627-ca/issues);
-3. premere il pulsante verde **New issue**;
-4. scegliere **Consegna** fra i moduli proposti e premere *Get started*;
-5. completare il titolo con la cartella dell'attività, così da avere `Consegna: es1`, e compilare i campi: l'indirizzo copiato prima ed eventuali note per la revisione;
-6. premere **Create** in fondo alla pagina.
+2. aprire il [modulo delle consegne](INDIRIZZO-DEL-MODULO) e compilarlo: l'esercitazione consegnata, il proprio nome utente di GitHub, l'indirizzo copiato prima ed eventuali note;
+3. premere *Invia*.
 
-Il docente risponde nella stessa pagina, e la risposta arriva per posta elettronica. La issue viene chiusa quando la revisione è conclusa: le issue aperte sono i lavori ancora da rivedere.
+<!-- Da sostituire con l'indirizzo del modulo di Google prima di ricavare i repository definitivi. -->
+
+Non serve nessun account per compilarlo. Nelle note conviene scrivere su che cosa si vogliono osservazioni, o che cosa non ha funzionato: è la parte che rende utile la revisione.
+
+**La revisione arriva nella chat di Teams**, non qui. Se dopo la consegna si continua a lavorare sulla stessa esercitazione, si rifà la consegna: vale l'ultima.
+
+## Il progetto
+
+Il progetto del secondo trimestre **non va in questo repository**: ognuno ne crea uno suo, con il nome che preferisce, così l'indirizzo del lavoro finito non è legato al corso e si può mettere in un portfolio.
+
+Serve quello che si è già imparato qui, ma dall'inizio: creare il repository su GitHub, metterci `index.html`, `style.css` e `sketch.js`, attivare GitHub Pages da *Settings › Pages* e, se si vuole usare l'agente come qui, farsi scrivere `AGENTS.md` con il comando `/init`. Le istruzioni per esteso stanno nella [consegna del progetto](https://codestesie.it/aa2627/ca/attivita/progetto/).
+
+La consegna si segnala con lo stesso modulo, scegliendo *progetto* fra le attività.
+
 
 ## I comandi di OpenCode
 
 - `/inizio` — scrive il proprio nome e l'indirizzo pubblico del repository;
-- `/crea es1` o `/crea progetto` — crea la cartella dell'attività, leggendo la consegna dal sito del corso;
+- `/crea es1`: crea la cartella dell'esercitazione, leggendo la consegna dal sito del corso;
 - `/verifica es1` — confronta il lavoro con i vincoli della consegna e dice quali non sono rispettati;
 - `/consegna es1` — controlla, pubblica e ricorda l'indirizzo da segnalare.
 
