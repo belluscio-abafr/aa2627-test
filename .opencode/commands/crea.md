@@ -1,10 +1,12 @@
 ---
-description: Crea la cartella di un'esercitazione o del progetto
+description: Crea la cartella di un'esercitazione
 ---
 
 Preparare la cartella `$1` di questo repository.
 
-Prima di tutto il nome della cartella. Se `$1` è una variante riconoscibile di `esN` («esercizio 2», «e2», «Es 3») o del progetto, usare la forma standard (`es2`, `progetto`) e dirlo allo studente in una riga. Se invece il nome non è riconoscibile, o sembra provvisorio («es1 prova», «variante esercizio 1»), avvisare che con un nome così l'indirizzo pubblico e il collegamento con la consegna non funzioneranno, e chiedere se crearla ugualmente.
+Prima di tutto il nome della cartella. Se `$1` è una variante riconoscibile di `esN` («esercizio 2», «e2», «Es 3»), usare la forma standard (`es2`) e dirlo allo studente in una riga. Se invece il nome non è riconoscibile, o sembra provvisorio («es1 prova», «variante esercizio 1»), avvisare che con un nome così l'indirizzo pubblico e il collegamento con la consegna non funzioneranno, e chiedere se crearla ugualmente.
+
+Se `$1` è il **progetto**, in qualunque forma («progetto», «project», «il progetto finale»), fermarsi senza creare niente: il progetto va in un repository che lo studente crea da sé, con il nome che preferisce, e le istruzioni stanno nella sua consegna, `https://codestesie.it/aa2627/ca/attivita/progetto/`.
 
 1. Leggere le specifiche su `https://codestesie.it/aa2627/ca/attivita/<cartella>/`. Se l'indirizzo non risponde, avvisare e fermarsi: l'attività non è ancora stata pubblicata.
 2. Creare la cartella con tre file.
