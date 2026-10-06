@@ -1,4 +1,4 @@
-# Computer Art 2026/27: le esercitazioni
+# Computer Art 2026/27: esercitazioni
 
 Repository personale per le esercitazioni del corso di **Computer Art**, Accademia di Belle Arti di Frosinone.
 
@@ -11,7 +11,7 @@ Servono **Visual Studio Code**, **Git**, **OpenCode** e due estensioni, OpenCode
 - [Visual Studio Code e OpenCode su Windows](https://codestesie.it/guide/vscode-opencode-windows/)
 - [Visual Studio Code e OpenCode su macOS](https://codestesie.it/guide/vscode-opencode-macos/)
 
-Una cosa le guide non la dicono, perché riguarda solo il corso: al primo avvio l'agente sceglie da sé un modello gratuito, e per cambiarlo si scrive `/models` nella conversazione e si sceglie dall'elenco; per usare modelli a pagamento occorre prima collegare un account con `/connect`.
+Al primo avvio l'agente sceglie da sé un modello gratuito, e per cambiarlo si scrive `/models` nella conversazione e si sceglie dall'elenco; per usare modelli a pagamento occorre prima collegare un account con `/connect`.
 
 Le scorciatoie da tastiera indicate qui e più avanti sono quelle di Windows: su macOS, al posto di `Ctrl`, si usa `Cmd`.
 
@@ -29,11 +29,13 @@ Una volta sola, all'inizio del corso. I primi tre passaggi si fanno **sul sito d
    *Settings › Pages › Source: Deploy from a branch › main › / (root) › Save* \
    Dopo un minuto circa, in cima alla stessa pagina compare l'indirizzo pubblico del proprio sito, «Your site is live at…»: è la conferma che il passaggio è riuscito, e conviene aprirlo per vedere l'elenco dei lavori, ancora vuoto.
 4. **Scaricare il repository sul proprio computer.** \
-   Su GitHub si copia l'indirizzo del repository appena creato: pulsante verde *Code › HTTPS ›* icona della copia. \
-   In Visual Studio Code: *Visualizza › Riquadro comandi* (`Ctrl+Shift+P`) *› Git: Clona* \
+   Su GitHub si copia l'indirizzo del repository appena creato: \
+   pulsante verde *Code › HTTPS ›* icona della copia. \
+   In Visual Studio Code: \
+   *Visualizza › Riquadro comandi* (`Ctrl+Shift+P`) *› Git: Clona* \
    Si incolla l'indirizzo, si indica la cartella dove mettere il repository e, alla domanda se aprirlo, si risponde di sì.
 5. **Personalizzare il repository con il proprio nome**, con il comando `/inizio`. \
-   La chat di OpenCode, che al primo avvio è chiusa, si apre con `Ctrl+Esc` o con la piccola icona di OpenCode in alto a destra nel pannello attivo: `/inizio` si scrive lì. \
+   La chat di OpenCode, che al primo avvio è chiusa, si apre con `Ctrl+Esc` o con la piccola icona di OpenCode in alto a destra nel pannello attivo: `/inizio` si scrive nel campo editabile centrale. \
    Il comando scrive il nome nelle pagine e l'indirizzo pubblico in questo file, così gli indirizzi che si leggono qui sono già i propri.
 
 ## Come si lavora
@@ -45,7 +47,9 @@ Da qui in avanti si lavora **in Visual Studio Code**, nella cartella scaricata s
 3. **Vedere il risultato nel browser**: \
    tasto destro su `index.html` della cartella *› Open with Live Server*
    > Conviene attivare il salvataggio automatico, *File › Salvataggio automatico*: con Live Server il browser si aggiorna a ogni salvataggio, quindi le modifiche si vedono mentre si scrive, senza premere ogni volta `Ctrl+S`.
-4. **Pubblicare il lavoro**, dal pannello del controllo di versione: \
+4. **Controllare il lavoro con la consegna**, con il comando `/verifica es1`. \
+   Rilegge le specifiche sul sito del corso e dice quali vincoli non sono ancora rispettati. Conviene darlo mentre si lavora, non solo alla fine: serve a sapere dove si è, non a dare un voto.
+5. **Pubblicare il lavoro**, se lo si vuole vedere subito online, dal pannello del controllo di versione: \
    *Visualizza › Controllo del codice sorgente* (`Ctrl+Shift+G`) \
    Si scrive un messaggio che dica che cosa è stato fatto, si preme *Commit* e poi *Sincronizza*.
    > Il messaggio non è facoltativo: senza, il pulsante *Commit* non conclude niente, ed è il motivo per cui a volte sembra che non funzioni. Bastano poche parole, come «prima versione di es1» o «colori più scuri e sfondo nero».
@@ -65,11 +69,11 @@ Il primo passaggio si fa **in Visual Studio Code**, il secondo **nel browser**.
 
 <!-- Da sostituire con l'indirizzo del modulo di Google, quello precompilato per questo corso. -->
 
-Non serve nessun account per compilare il modulo. Nelle note conviene scrivere su che cosa si vogliono osservazioni, o che cosa non ha funzionato: è la parte che rende utile la revisione.
+Non è necessario nessun account Google per compilare il modulo. 
 
 **La revisione arriva nella chat di Teams**, non qui. Se dopo la consegna si continua a lavorare sulla stessa esercitazione, si rifà la consegna: vale l'ultima.
 
-> **Se l'indirizzo serve senza passare dal comando.** Si pubblica il lavoro con Commit e Sincronizza, si apre nel browser il proprio elenco dei lavori, `https://NOMEUTENTE.github.io/aa2627-ca-es/`, si entra nella cartella dell'esercitazione e si copia l'indirizzo dalla barra. È lo stesso che compone `/consegna`. Non va confuso con quello di Live Server, che comincia per `127.0.0.1` e funziona solo sul proprio computer.
+> Se l'indirizzo serve senza passare dal `/consegna`, si pubblica il lavoro con Commit e Sincronizza, si apre nel browser il proprio elenco dei lavori, `https://NOMEUTENTE.github.io/aa2627-ca-es/`, si entra nella cartella dell'esercitazione e si copia l'indirizzo dalla barra. Attenzione a non confonderlo con quello di Live Server, che comincia per `127.0.0.1` e funziona solo sul proprio computer.
 
 ## I comandi di OpenCode
 
