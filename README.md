@@ -46,13 +46,16 @@ Le cartelle si chiamano `es1`, `es2` e così via: sono gli stessi nomi delle con
 
 ## Come si consegna
 
-La consegna si segnala **dopo** aver fatto Commit e Sincronizza: se il lavoro non è stato pubblicato, all'indirizzo segnalato non si vede nulla o si vede la versione vecchia.
+La via più breve è il comando **`/consegna es1`**: controlla che la cartella sia completa, fa commit e sincronizzazione, e poi compone e mostra **l'indirizzo pubblico del lavoro**, che è quello da segnalare. Resta solo da aprire il modulo.
 
-1. Aprire nel browser il proprio elenco dei lavori, `https://NOMEUTENTE.github.io/aa2627-ca-lavori/`, entrare nella cartella dell'attività consegnata e copiare l'indirizzo dalla barra: servirà fra poco. Non va confuso con l'indirizzo che mostra Live Server, che comincia per `127.0.0.1` e funziona solo sul proprio computer.
-2. aprire il [modulo delle consegne](INDIRIZZO-DEL-MODULO) e compilarlo: l'esercitazione consegnata, il proprio nome utente di GitHub, l'indirizzo copiato prima ed eventuali note;
-3. premere *Invia*.
+A mano si fa così, ed è utile saperlo perché è lo stesso indirizzo:
 
-<!-- Da sostituire con l'indirizzo del modulo di Google prima di ricavare i repository definitivi. -->
+1. pubblicare il lavoro con Commit e Sincronizza, come nella sezione precedente. Se il lavoro non è stato pubblicato, all'indirizzo segnalato non si vede nulla, o si vede la versione vecchia;
+2. aprire nel browser il proprio elenco dei lavori, `https://NOMEUTENTE.github.io/aa2627-ca-lavori/`, entrare nella cartella dell'esercitazione e copiare l'indirizzo dalla barra. Non va confuso con quello che mostra Live Server, che comincia per `127.0.0.1` e funziona solo sul proprio computer.
+
+Poi si apre il [modulo delle consegne](INDIRIZZO-DEL-MODULO) e si compila: l'esercitazione, cognome e nome, l'indirizzo del lavoro ed eventuali note.
+
+<!-- Da sostituire con l'indirizzo del modulo di Google, quello precompilato per questo corso. -->
 
 Non serve nessun account per compilarlo. Nelle note conviene scrivere su che cosa si vogliono osservazioni, o che cosa non ha funzionato: è la parte che rende utile la revisione.
 
