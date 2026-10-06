@@ -18,50 +18,35 @@ Le scorciatoie da tastiera indicate qui e più avanti sono quelle di Windows: su
 
 ## Come si prepara il repository
 
-Una volta sola, all'inizio del corso. I primi quattro passaggi si fanno **sul sito di GitHub**, con il browser; gli ultimi due in **Visual Studio Code**.
+Una volta sola, all'inizio del corso. I primi tre passaggi si fanno **sul sito di GitHub**, con il browser; il quarto comincia lì e finisce in **Visual Studio Code**, dove si svolge anche l'ultimo.
 
-1. **Creare un profilo su [github.com](https://github.com/signup)**, se non se ne ha già uno.
-
+1. **Creare un profilo su [github.com](https://github.com/signup)**, se non se ne ha già uno. \
    Il nome utente scelto comparirà negli indirizzi dei propri lavori, quindi conviene sceglierlo breve e leggibile. Registrandosi con la posta dell'Accademia si può poi chiedere il [GitHub Student Developer Pack](https://education.github.com/pack), che dà gratuitamente il piano Pro.
-
-2. **Creare la propria copia del modello**, dalla pagina del repository del corso:
-
-   *Use this template › Create a new repository*
-
+2. **Creare la propria copia del modello**, dalla pagina del repository del corso: \
+   *Use this template › Create a new repository* \
    Dare alla copia il nome `aa2627-ca-es`, lasciarla *Public* e premere *Create repository*. È un repository indipendente e resta sul proprio profilo.
-
-3. **Attivare GitHub Pages**, che pubblica i lavori in rete:
-
-   *Settings › Pages › Source: Deploy from a branch › main › / (root) › Save*
-
-   Dopo un minuto circa, in cima alla stessa pagina compare un riquadro con l'indirizzo pubblico del proprio sito, «Your site is live at…»: è la conferma che il passaggio è riuscito, e conviene aprirlo per vedere l'elenco dei lavori, ancora vuoto.
-
-4. **Copiare l'indirizzo del proprio repository**, quello appena creato:
-
-   pulsante verde *Code › HTTPS ›* icona della copia
-
-5. **Scaricare il repository sul proprio computer**, da Visual Studio Code:
-
-   *Visualizza › Riquadro comandi* (`Ctrl+Shift+P`) *› Git: Clona*
-
-   Si incolla l'indirizzo copiato e si indica la cartella dove metterlo. Alla domanda se aprire il repository clonato, rispondere di sì.
-
-6. **Dare il comando `/inizio`** all'estensione di OpenCode, con la cartella aperta.
-
-   Scrive il proprio nome nelle pagine e l'indirizzo pubblico in questo file, così gli indirizzi che si leggono qui sono già i propri.
+3. **Attivare GitHub Pages**, che pubblica i lavori in rete: \
+   *Settings › Pages › Source: Deploy from a branch › main › / (root) › Save* \
+   Dopo un minuto circa, in cima alla stessa pagina compare l'indirizzo pubblico del proprio sito, «Your site is live at…»: è la conferma che il passaggio è riuscito, e conviene aprirlo per vedere l'elenco dei lavori, ancora vuoto.
+4. **Scaricare il repository sul proprio computer.** \
+   Su GitHub si copia l'indirizzo del repository appena creato: pulsante verde *Code › HTTPS ›* icona della copia. \
+   In Visual Studio Code: *Visualizza › Riquadro comandi* (`Ctrl+Shift+P`) *› Git: Clona* \
+   Si incolla l'indirizzo, si indica la cartella dove mettere il repository e, alla domanda se aprirlo, si risponde di sì.
+5. **Personalizzare il repository con il proprio nome**, dando `/inizio` all'estensione di OpenCode. \
+   Il comando scrive il nome nelle pagine e l'indirizzo pubblico in questo file, così gli indirizzi che si leggono qui sono già i propri.
 
 ## Come si lavora
 
 Da qui in avanti si lavora **in Visual Studio Code**, nella cartella scaricata sul proprio computer: sul sito di GitHub non c'è più niente da fare a mano.
 
-1. Creare la cartella dell'esercitazione con il comando `/crea es1`.
-2. Scrivere il codice in `sketch.js`, dentro quella cartella.
-3. Vedere il risultato: tasto destro su `index.html` della cartella › *Open with Live Server*.
-
+1. **Creare la cartella dell'esercitazione**, con il comando `/crea es1`.
+2. **Scrivere il codice** in `sketch.js`, dentro quella cartella.
+3. **Vedere il risultato nel browser**: \
+   tasto destro su `index.html` della cartella *› Open with Live Server*
    > Conviene attivare il salvataggio automatico, *File › Salvataggio automatico*: con Live Server il browser si aggiorna a ogni salvataggio, quindi le modifiche si vedono mentre si scrive, senza premere ogni volta `Ctrl+S`.
-
-4. Pubblicare il lavoro: aprire *Visualizza › Controllo del codice sorgente* (`Ctrl+Shift+G`), **scrivere un messaggio** che dica che cosa è stato fatto, premere **Commit** e poi **Sincronizza**.
-
+4. **Pubblicare il lavoro**, dal pannello del controllo di versione: \
+   *Visualizza › Controllo del codice sorgente* (`Ctrl+Shift+G`) \
+   Si scrive un messaggio che dica che cosa è stato fatto, si preme *Commit* e poi *Sincronizza*.
    > Il messaggio non è facoltativo: senza, il pulsante *Commit* non conclude niente, ed è il motivo per cui a volte sembra che non funzioni. Bastano poche parole, come «prima versione di es1» o «colori più scuri e sfondo nero».
 
 Dopo circa un minuto il lavoro è online all'indirizzo `https://NOMEUTENTE.github.io/aa2627-ca-es/es1/`, con il proprio nome utente di GitHub al posto di `NOMEUTENTE` e la cartella giusta al posto di `es1`.
@@ -72,8 +57,10 @@ Le cartelle si chiamano `es1`, `es2` e così via: sono gli stessi nomi delle con
 
 Il primo passaggio si fa **in Visual Studio Code**, il secondo **nel browser**.
 
-1. Dare all'agente il comando **`/consegna es1`**, con il nome della cartella: controlla che sia completa, fa commit e sincronizzazione, e poi compone e mostra **l'indirizzo pubblico del lavoro**.
-2. Aprire il [modulo delle consegne](INDIRIZZO-DEL-MODULO) e compilarlo: l'esercitazione, cognome e nome, l'indirizzo appena mostrato dal comando ed eventuali note.
+1. **Pubblicare il lavoro e ottenerne l'indirizzo**, con il comando `/consegna es1`. \
+   Controlla che la cartella sia completa, fa commit e sincronizzazione, e mostra l'indirizzo pubblico da segnalare.
+2. **Compilare il [modulo delle consegne](INDIRIZZO-DEL-MODULO)**: \
+   l'esercitazione, cognome e nome, l'indirizzo appena mostrato dal comando ed eventuali note.
 
 <!-- Da sostituire con l'indirizzo del modulo di Google, quello precompilato per questo corso. -->
 
