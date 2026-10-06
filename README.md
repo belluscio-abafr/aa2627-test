@@ -32,7 +32,8 @@ Una volta sola, all'inizio del corso. I primi tre passaggi si fanno **sul sito d
    Su GitHub si copia l'indirizzo del repository appena creato: pulsante verde *Code › HTTPS ›* icona della copia. \
    In Visual Studio Code: *Visualizza › Riquadro comandi* (`Ctrl+Shift+P`) *› Git: Clona* \
    Si incolla l'indirizzo, si indica la cartella dove mettere il repository e, alla domanda se aprirlo, si risponde di sì.
-5. **Personalizzare il repository con il proprio nome**, dando `/inizio` all'estensione di OpenCode. \
+5. **Personalizzare il repository con il proprio nome**, con il comando `/inizio`. \
+   La chat di OpenCode, che al primo avvio è chiusa, si apre con `Ctrl+Esc` o con la piccola icona di OpenCode in alto a destra nel pannello attivo: `/inizio` si scrive lì. \
    Il comando scrive il nome nelle pagine e l'indirizzo pubblico in questo file, così gli indirizzi che si leggono qui sono già i propri.
 
 ## Come si lavora
