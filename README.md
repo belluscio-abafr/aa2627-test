@@ -35,7 +35,7 @@ Una volta sola, all'inizio del corso. I primi tre passaggi si fanno **sul sito d
    *Visualizza › Riquadro comandi* (`Ctrl+Shift+P`) *› Git: Clona* \
    Si incolla l'indirizzo, si indica la cartella dove mettere il repository e, alla domanda se aprirlo, si risponde di sì.
 5. **Personalizzare il repository con il proprio nome**, con il comando `/inizio`. \
-   La chat di OpenCode, che al primo avvio è chiusa, si apre con `Ctrl+Esc` o con la piccola icona di OpenCode in alto a destra nel pannello attivo: `/inizio` si scrive nel campo editabile centrale. \
+   La chat di OpenCode, che al primo avvio è chiusa, si apre con la piccola icona di OpenCode in alto a destra nel pannello attivo: `/inizio` si scrive nel campo editabile centrale. \
    Il comando scrive il nome nelle pagine e l'indirizzo pubblico in questo file, così gli indirizzi che si leggono qui sono già i propri.
 
 ## Come si lavora
